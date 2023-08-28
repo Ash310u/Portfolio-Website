@@ -1,6 +1,6 @@
 # Portfolio-Website
 <pre>
-  my second website by using html, css, js,express js
+  My second website by using html, css, js,express js
 </pre>
 
 ## Portfolio 
