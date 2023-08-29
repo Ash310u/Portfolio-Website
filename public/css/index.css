@@ -348,7 +348,7 @@ button a {
   height: 90%;
   border-radius: 50%;
   box-shadow: 0 0 300px rgba(244, 3, 3, 0.3);
-  animation: cursor 2s linear infinite;
+  animation: cursor 5s linear infinite;
 }
 
 @keyframes cursor {
