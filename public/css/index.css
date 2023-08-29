@@ -5,9 +5,11 @@
   text-decoration: none;
 }
 body {
-  background: #ffffff;
+  background: #fff;
   font-family: "Poppins", sans-serif;
-  cursor: none;
+}
+main {
+  backdrop-filter: blur(40px);
 }
 /* Style the navigation menu */
 .fixed-nav {
@@ -157,14 +159,6 @@ button a {
   padding: 60px 0px;
   color: rgba(17, 17, 17, 0.8);
   opacity: 1;
-}
-.container-2:hover {
-  background: rgb(105, 209, 226);
-  background: linear-gradient(
-    90deg,
-    rgba(105, 209, 226, 1) 0%,
-    rgba(196, 144, 246, 1) 100%
-  );
 }
 .about-first h2 {
   text-align: center;
@@ -334,22 +328,101 @@ button a {
   width: 35px;
 }
 
+/* CURSOR Design */
 .cursor {
-  width: 1rem;
-  height: 1rem;
-  border:2px solid rgb(0, 0, 0);
-  opacity: .5;
+  width: 250px;
+  height: 250px;
+  opacity: 0.5;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: all 0.2s ease;
 }
-.link-grow {
-  transform: scale(4);
-  background-color: #000;
-  transition: all .3s ease;
-  transition-property: background, tranform;
-  transform-origin: 100% 100% ;
+.cursor::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 50%;
+  box-shadow: 0 0 300px rgba(244, 3, 3, 0.3);
+  animation: cursor 2s linear infinite;
+}
+
+@keyframes cursor {
+  0% {
+    transform: rotate(0deg);
+    width: 95%;
+    height: 100%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
+
+  20% {
+    transform: rotate(72deg);
+    width: 98%;
+    height: 94%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
+ 
+  40% {
+    transform: rotate(144deg);
+    width: 90%;
+    height: 95%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
+  
+  60% {
+    transform: rotate(216deg);
+    width: 95%;
+    height: 100%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
+  
+  80% {
+    transform: rotate(288deg);
+    width: 98%;
+    height: 94%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
+
+  100% {
+    transform: rotate(360deg);
+    width: 90%;
+    height: 95%;
+    background: rgb(105, 209, 226);
+    background: linear-gradient(
+      90deg,
+      rgba(105, 209, 226, 1) 0%,
+      rgba(196, 144, 246, 1) 100%
+    );
+  }
 }
 /* tablet version ////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 768px) and (max-width: 1137px) {
@@ -528,7 +601,7 @@ button a {
     align-items: center;
     color: #ffffff;
   }
-  .cursor{
+  .cursor {
     display: none;
   }
 }
@@ -775,7 +848,7 @@ button a {
     align-items: center;
     color: #ffffff;
   }
-  .cursor{
+  .cursor {
     display: none;
   }
 }
