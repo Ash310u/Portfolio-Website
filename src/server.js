@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 app.get('/about', (req, res) => {
-    res.render('index')
+    res.render('about')
 })
 app.get('/work', (req, res) => {
     res.render('index')
