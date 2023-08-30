@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 main {
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(30px);
 }
 /* Style the navigation menu */
 .fixed-nav {
@@ -330,20 +330,19 @@ button a {
 
 /* CURSOR Design */
 .cursor {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   position: absolute;
-  border:5px dashed #14f199;
-  box-shadow:10px 10px 2px 2px #cc47a6;
+  border:10px dashed #ffff00;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   background: rgb(105, 209, 226);
   background: linear-gradient(
     90deg,
-    rgba(105, 209, 226, 1) 0%,
-    rgba(196, 144, 246, 1) 100%
+    rgb(0, 68, 255) 0%,
+    rgb(217, 0, 255) 100%
   );
 }
 .cursor::before {
@@ -352,16 +351,17 @@ button a {
   left: 0;
   top: 0;
   width: 100%;
-  height: 90%;
+  height: 100%;
   border-radius: 50%;
-  animation: cursor 10s linear infinite;
+  animation: cursor 20s linear infinite;
 }
 
 @keyframes cursor {
   0% {
     transform: rotate(0deg);
-    width: 98%;
-    height: 88%;
+    width: 100%;
+    height: 70%;
+    box-shadow:10px 10px 2px 2px #ff0000;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
@@ -372,8 +372,9 @@ button a {
 
   20% {
     transform: rotate(72deg);
-    width: 90%;
+    width: 70%;
     height: 100%;
+    box-shadow:10px 10px 2px 2px #ff00c8;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
@@ -384,8 +385,9 @@ button a {
 
   40% {
     transform: rotate(144deg);
-    width: 88%;
-    height: 98%;
+    width: 105%;
+    height: 75%;
+    box-shadow:10px 10px 2px 2px #00ff5e;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
@@ -396,8 +398,9 @@ button a {
 
   60% {
     transform: rotate(216deg);
-    width: 90%;
-    height: 100%;
+    width: 75%;
+    height: 105%;
+    box-shadow:10px 10px 2px 2px #ff9500;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
@@ -408,8 +411,9 @@ button a {
 
   80% {
     transform: rotate(288deg);
-    width: 85%;
-    height: 95%;
+    width: 70%;
+    height:100%;
+    box-shadow:10px 10px 2px 2px #ffa200;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
@@ -420,8 +424,9 @@ button a {
 
   100% {
     transform: rotate(360deg);
-    width: 95%;
-    height: 85%;
+    width: 100%;
+    height: 70%;
+    box-shadow:10px 10px 2px 2px #0048ff;
     background: rgb(105, 209, 226);
     background: linear-gradient(
       90deg,
