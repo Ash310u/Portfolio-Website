@@ -330,11 +330,12 @@ button a {
 
 /* CURSOR Design */
 .cursor {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   position: absolute;
-  opacity: .6;
+  border:5px dashed #14f199;
+  box-shadow:10px 10px 2px 2px #cc47a6;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: all 0.2s ease;
