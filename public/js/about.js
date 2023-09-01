@@ -6,10 +6,10 @@ function toggle() {
     popup.classList.toggle("active");
 }
 
-// let search = document.getElementById("input").value;
+let search = document.getElementById("input").value;
 
-// let result = search.find(function (arg) {
-//     return arg.search
-//   })
+let result = search.find(function (arg) {
+    return arg.search
+  })
 
-//   console.log(result);
+  console.log(result);
