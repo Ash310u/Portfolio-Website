@@ -2,6 +2,8 @@ const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
 
+const port = process.env.PORT 
+
 // calling express js
 const app = express()
 
@@ -34,6 +36,6 @@ app.get('/contact', (req, res) => {
     res.render('index')
 })
 
-app.listen(5000, () => {
-    console.log('server is up on port 5000.');
+app.listen( port, () => {
+    console.log(`server is up on port ${port}.`);
 })
