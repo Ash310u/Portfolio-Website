@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-  <link rel="manifest" href="../favicon/site.webmanifest" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
   <link rel="stylesheet" href="css/index.css" />
   <script src="js/app.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -480,34 +480,34 @@
               <div class="names">
                 <div class="first-name">
                   <p>
-                    <input type="text" name="name" placeholder="First Name" />
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required />
                   </p>
                 </div>
                 <div class="last-name">
                   <p>
-                    <input type="text" name="name" placeholder="Last Name" />
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
                   </p>
                 </div>
               </div>
               <div class="mobile-email">
                 <div class="email">
                   <p>
-                    <input type="email" name="email" placeholder="Email" />
+                    <input type="email" name="email" id="email" placeholder="Email" required />
                   </p>
                 </div>
                 <div class="mobile">
                   <p>
-                    <input type="number" name="Mobile" placeholder="Mobile" />
+                    <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile" required />
                   </p>
                 </div>
               </div>
               <div class="massage">
                 <p>
-                  <textarea name="massage" id="" cols="" rows="" placeholder="Type Your Massage Here..."></textarea>
+                  <textarea name="msg" id="msg" cols="" rows="" placeholder="Type Your Massage Here..." required ></textarea>
                 </p>
               </div>
               <div>
-                <input type="Submit" value="Submit" class="btnn" />
+                <input type="Submit" value="Submit" class="btnn" id="submit" />
               </div>
             </form>
           </div>
