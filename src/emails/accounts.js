@@ -18,6 +18,7 @@ const sendEmail = ({ firstName, lastName, email, mobileNumber, msg } ) => {
 
     const mail = {
         to:'ashutoshsaha299@gmail.com',
+        from:email,
         subject:`${firstName} ${lastName} is trying to contact you `,
         text:`Name: ${firstName} ${lastName}, Number: ${mobileNumber}, email: ${email},  Message: ${msg}`,
     }
