@@ -33,7 +33,7 @@ app.get("/mail", (req, res) => {
         })
     }
     sendEmail(req.query)
-    res.redirect('index')
+    res.redirect('/')
 });
 
 app.get('/about', (req, res) => {
