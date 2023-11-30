@@ -1,8 +1,8 @@
 # Portfolio-Website
 <pre>
   My portfolio website using html, css, js, express
+  <img src="./port.png" alt="">
 </pre>
-<img src="./port.png" alt="">
 
 ## Portfolio 
 <pre>
