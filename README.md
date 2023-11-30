@@ -1,6 +1,6 @@
 # Portfolio-Website
 <pre>
-  My second website by using html, css, js,express js
+  My portfolio website using html, css, js, express
 </pre>
 <img src="./port.png" alt="">
 ## Portfolio 
