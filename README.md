@@ -6,6 +6,5 @@
 </pre>
 
 ## Portfolio 
-<pre>
-  [Browse Link](https://ats-portfolio.onrender.com")
-</pre>
+
+[Browse Link](https://ats-portfolio.onrender.com")
